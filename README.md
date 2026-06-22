@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RoleSignal MVP
 
-## Getting Started
+RoleSignal is a Next.js MVP for structured company-role decision intelligence. It turns scattered signals such as compensation, WLB, benefits, on-call, hours, promotion speed, and confidence into searchable role pages.
 
-First, run the development server:
+The seed data in this prototype is demo data only. It is designed to validate the product structure before connecting real sources or user submissions.
+
+## Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Files
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/page.tsx`: SEO metadata and the main role explorer entry.
+- `src/components/RoleExplorer.tsx`: searchable MVP workspace, comparison table, and contribution modal.
+- `src/app/roles/[slug]/page.tsx`: server-rendered role detail pages for SEO.
+- `src/lib/roleData.ts`: typed demo dataset that can later move to Postgres or another data store.
+- `src/app/sitemap.ts` and `src/app/robots.ts`: crawlable SEO surfaces.
 
-## Learn More
+## Product Notes
 
-To learn more about Next.js, take a look at the following resources:
+- The homepage is the working product surface, not a marketing landing page.
+- Individual role pages are statically generated from the seed dataset.
+- User contributions currently save to local UI state; the next production step is wiring the form to an API route and database.
+- Real aggregation from third-party sites should store source links, derived structured summaries, timestamps, and confidence scores rather than copying third-party content.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## SEO Direction
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Use `/roles/[slug]` for long-tail pages such as `Google L5 SWE Mountain View`.
+- Add future routes for `/companies/[company]`, `/roles/[role]`, `/locations/[location]`, and comparison pages.
+- Expand JSON-LD once real collection methodology, update cadence, and source provenance are available.
