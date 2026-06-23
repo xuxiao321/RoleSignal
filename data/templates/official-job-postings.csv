@@ -1,0 +1,2 @@
+company,domain,role,level,companyLevel,levelSystem,location,team,employmentMode,baseMin,baseMax,bonusMin,bonusMax,equityMin,equityMax,benefitsSummary,sourceUrl,observedAt,notes
+ExampleCo,example.com,Software Engineer,Senior,L5,Company-specific ladder,"New York, NY",Platform,Hybrid,150000,190000,0,25000,50000,90000,"Medical, dental, vision, 401k match",https://example.com/careers/job-id,2026-06-22,Use official company career pages or ATS-hosted postings that disclose pay ranges.

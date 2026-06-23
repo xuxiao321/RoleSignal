@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://rolesignal.example"),
   title: {
-    default: "RoleSignal | Company Role Decision Intelligence",
+    default: "RoleSignal | Job Posting Gaps and Employee Reports",
     template: "%s",
   },
   description:
-    "Structured company and role intelligence for compensation, WLB, on-call, benefits, promotion speed, and confidence signals.",
+    "Compare what job postings disclose, what they leave out, and what employees report about compensation, WLB, hours, on-call, benefits, and promotion.",
   applicationName: "RoleSignal",
   openGraph: {
     siteName: "RoleSignal",

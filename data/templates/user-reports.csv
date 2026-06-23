@@ -1,0 +1,2 @@
+company,role,level,location,team,employmentMode,base,bonus,equity,total,weeklyHoursMin,weeklyHoursMax,oncall,workLifeBalance,benefits,growth,promotionSpeed,negotiationRoom,verified,submittedAt,notes
+ExampleCo,Software Engineer,L4,"New York, NY",Platform,Hybrid,170000,20000,70000,260000,42,50,"One week every two months",4.0,4.2,3.8,Moderate,Medium,false,2026-06-22,Only accept reports from the contributor's own experience or materials they have the right to submit.

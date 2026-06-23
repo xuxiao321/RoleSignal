@@ -1,0 +1,4 @@
+sourceName,sourceType,url,licenseOrTerms,fieldsToUse,refreshCadence,notes
+BLS OEWS,public_wage_data,https://www.bls.gov/oes/,"Public government data","occupation,area,wage percentiles",annual,"Use as regional wage baseline, not company-specific TC."
+DOL OFLC Disclosure Data,public_immigration_data,https://www.dol.gov/agencies/eta/foreign-labor/performance,"Public government disclosure data","employer,job title,worksite,base wage",quarterly,"Useful for base salary baseline; does not include bonus/equity."
+Official company job postings,official_job_posting,company_careers_url,"Review each site's terms","salary range,location,employment mode,benefits",weekly,"Prefer manual collection or licensed APIs. Store source URL and observed date."
